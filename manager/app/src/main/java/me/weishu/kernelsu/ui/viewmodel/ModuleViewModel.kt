@@ -51,9 +51,6 @@ class ModuleViewModel : ViewModel() {
         private set
     var search by mutableStateOf("")
 
-    var isOverlayAvailable by mutableStateOf(overlayFsAvailable())
-        private set
-
     var sortEnabledFirst by mutableStateOf(false)
     var sortActionFirst by mutableStateOf(false)
     val moduleList by derivedStateOf {
